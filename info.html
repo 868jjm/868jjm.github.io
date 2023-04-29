@@ -59,6 +59,14 @@
 	</div>
 
 <script src="./script.js"></script>
-
+<script>
+    window.onload = () => {
+      // JUST DEFINE EMPTY ARRAY [] IF NO CSS/JS TO LOAD
+      loader(
+        ["my.css"],
+        ["my.js", "https://cdnjs.cloudflare.com/ajax/libs/WHATEVER/"]
+      );
+    };
+    </script>
 </body>
 </html>

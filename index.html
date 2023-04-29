@@ -14,7 +14,7 @@
 	</script>
 	<meta charset="UTF-8">
 	<title>carbondotink</title>
-	<link rel="icon" href="C:/Users/juerg/Documents/GitHub/FE111/images/favicon.ico" type="image/icon">
+	<link rel="icon" href="C:/Users/juerg/Documents/GitHub/FE111/images/favicon.ico" type="image/icon type">
 	<link rel="stylesheet" href="./style.css">
 
 
@@ -38,19 +38,27 @@
 	<div class="steven" id="steven">
 		<!-- using different class for links that needed to be opened within the same page -->
 		<!-- so I'm using i-link -->
-		<!-- <a class="i-link" data-href="info.html">WORK</a> -->
+		<!--<a class="i-link" data-href="info.html">WORK</a>-->
 		<a class="i-link" data-href="info.html">INFO</a>
 	</div>
 
 	<div class="loretta" id="loretta">
-		<p>
+		<center>
 			<a class="i-link" data-href="https://www.instagram.com/carbondotink/">INSTAGRAM</a>
 			<a class="i-link" data-href="https://twitter.com/carbondotink">TWITTER</a>
 			
-		</p>
+		</center>
 	</div>
 
 <script src="./script.js"></script>
-
+<script>
+    window.onload = () => {
+      // JUST DEFINE EMPTY ARRAY [] IF NO CSS/JS TO LOAD
+      loader(
+        ["my.css"],
+        ["my.js"]
+      );
+    };
+    </script>
 </body>
 </html>
