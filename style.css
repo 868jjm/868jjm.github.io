@@ -54,6 +54,7 @@ h1 {
   }
 
 .loretta {
+    text-align: center;
     font-family: "Andale Mono", "AndaleMono", Andale-Mono, AndaleMono, monospace;
     font-size: 0.8em;
     color: #030303;
