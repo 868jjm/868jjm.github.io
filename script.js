@@ -260,7 +260,7 @@
         function onWindowResize( e ) {
             containerWidth = container.clientWidth;
             containerHeight = container.clientHeight;
-            renderer.setSize( containerWidth, containerHeight,false );
+            renderer.setSize( containerWidth, containerHeight,true );
             camera.aspect = containerWidth / containerHeight;
             camera.updateProjectionMatrix();
         }
