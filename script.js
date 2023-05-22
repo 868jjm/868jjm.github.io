@@ -259,8 +259,8 @@
     
         function onWindowResize( e ) {
             window.innerWidth
-            containerWidth = container.clientWidth;
-            containerHeight = container.clientHeight;
+            containerWidth =window.innerWidth;
+            containerHeight = window.innerHeight;
              
             renderer.setSize(  window.innerWidth, window.innerHeight,true );
             camera.aspect = containerWidth / containerHeight;
