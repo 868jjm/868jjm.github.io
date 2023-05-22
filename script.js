@@ -258,11 +258,10 @@
         }
     
         function onWindowResize( e ) {
-
-            containerWidth =window.innerWidth;
-            containerHeight = window.innerHeight;
-             
-            renderer.setSize(  window.innerWidth, window.innerHeight,true );
+            window.innerWidth
+            containerWidth = container.clientWidth;
+            containerHeight = container.clientHeight;
+            renderer.setSize( containerWidth, containerHeight,true );
             camera.aspect = containerWidth / containerHeight;
             camera.updateProjectionMatrix();
         }
