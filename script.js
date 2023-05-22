@@ -258,7 +258,7 @@
         }
     
         function onWindowResize( e ) {
-            window.innerWidth
+
             containerWidth =window.innerWidth;
             containerHeight = window.innerHeight;
              
