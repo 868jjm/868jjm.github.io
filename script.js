@@ -90,7 +90,7 @@
         
             // Set the new position
             text1.position.set(newX, newY, zPosition);
-            text1.position.set(-1000, 900, 1100);
+            //text1.position.set(-1000, 900, 1100);
             text1.rotateX(Math.PI);
             scene.add(text1);
             console.log(text1);
@@ -145,7 +145,7 @@
          
              // Define the percentage values for positioning
              const xPercentage = -100; // Adjust as needed
-             const yPercentage = 350; // Adjust as needed
+             const yPercentage = 8000; // Adjust as needed
              const zPosition = 10; // Adjust the Z position as needed
          
              // Calculate the new position based on screen dimensions and percentages
