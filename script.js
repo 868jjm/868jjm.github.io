@@ -76,6 +76,20 @@
                 })
             );
             text1.material.map.needsUpdate = true;
+            const newWidth = window.innerWidth;
+            const newHeight = window.innerHeight;
+        
+            // Define the percentage values for positioning
+            const xPercentage = -50; // Adjust as needed
+            const yPercentage = 40; // Adjust as needed
+            const zPosition = 10; // Adjust the Z position as needed
+        
+            // Calculate the new position based on screen dimensions and percentages
+            const newX = (xPercentage / 100) * newWidth;
+            const newY = (yPercentage / 100) * newHeight;
+        
+            // Set the new position
+            text1.position.set(newX, newY, zPosition);
             text1.position.set(-1000, 900, 1100);
             text1.rotateX(Math.PI);
             scene.add(text1);
@@ -126,7 +140,21 @@
                  })
              );
              text2.material.map.needsUpdate = true;
-             text2.position.set(-2000, 2000, 10);
+             const newWidth = window.innerWidth;
+             const newHeight = window.innerHeight;
+         
+             // Define the percentage values for positioning
+             const xPercentage = -100; // Adjust as needed
+             const yPercentage = 350; // Adjust as needed
+             const zPosition = 10; // Adjust the Z position as needed
+         
+             // Calculate the new position based on screen dimensions and percentages
+             const newX = (xPercentage / 100) * newWidth;
+             const newY = (yPercentage / 100) * newHeight;
+         
+             // Set the new position
+             text2.position.set(newX, newY, zPosition);
+             //text2.position.set(-2000, 2000, 10);
              text2.rotateX(Math.PI);
              scene.add(text2);
              console.log(text2);
@@ -258,9 +286,10 @@
         }
     
         function onWindowResize( e ) {
+
             containerWidth = container.clientWidth;
             containerHeight = container.clientHeight;
-            renderer.setSize( containerWidth, containerHeight );
+            renderer.setSize( containerWidth, containerHeight,true );
             camera.aspect = containerWidth / containerHeight;
             camera.updateProjectionMatrix();
         }
