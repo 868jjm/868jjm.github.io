@@ -145,7 +145,7 @@
          
              // Define the percentage values for positioning
              const xPercentage = -100; // Adjust as needed
-             const yPercentage = 8000; // Adjust as needed
+             const yPercentage = 350; // Adjust as needed
              const zPosition = 10; // Adjust the Z position as needed
          
              // Calculate the new position based on screen dimensions and percentages
