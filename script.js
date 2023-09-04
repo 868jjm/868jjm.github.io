@@ -16,10 +16,6 @@
             camera.aspect = window.innerWidth / window.innerHeight;
 
             camera.updateProjectionMatrix();
-            // Update text2 position when the screen size changes
-            updateText1Position();
-            // Update text2 position when the screen size changes
-            updateText2Position();
         })
 
         
@@ -41,41 +37,6 @@
         light.position.set(0,0,25);
         scene.add(light);
 
-        // Function to update text2 position based on screen dimensions and percentages
-        function updateText1Position() {
-            const newWidth = window.innerWidth;
-            const newHeight = window.innerHeight;
-
-            // Define the percentage values for positioning text2
-            const xPercentage = -50; // Adjust as needed
-            const yPercentage = 40; // Adjust as needed
-            const zPosition = 10; // Adjust the Z position as needed
-
-            // Calculate the new position based on screen dimensions and percentages
-            const newX = (xPercentage / 100) * newWidth;
-            const newY = (yPercentage / 100) * newHeight;
-
-            // Set the new position for text2
-            text2.position.set(newX, newY, zPosition);
-        }
-
-        // Function to update text2 position based on screen dimensions and percentages
-        function updateText2Position() {
-            const newWidth = window.innerWidth;
-            const newHeight = window.innerHeight;
-
-            // Define the percentage values for positioning text2
-            const xPercentage = -100; // Adjust as needed
-            const yPercentage = 80; // Adjust as needed
-            const zPosition = 10; // Adjust the Z position as needed
-
-            // Calculate the new position based on screen dimensions and percentages
-            const newX = (xPercentage / 100) * newWidth;
-            const newY = (yPercentage / 100) * newHeight;
-
-            // Set the new position for text2
-            text1.position.set(newX, newY, zPosition);
-        }
 
         let text1 = new THREE.Group(); 
         (function() {
@@ -115,12 +76,7 @@
                 })
             );
             text1.material.map.needsUpdate = true;
-       
-            // Set the new position
-            // Initial setup
-            updateText1Position(); // Call the function to set the initial text2 position
-
-            //text1.position.set(-1000, 900, 1100);
+            text1.position.set(-1000, 900, 1100);
             text1.rotateX(Math.PI);
             scene.add(text1);
             console.log(text1);
@@ -170,10 +126,7 @@
                  })
              );
              text2.material.map.needsUpdate = true;
-            // Initial setup
-            updateText2Position(); // Call the function to set the initial text2 position
-
-             //text2.position.set(-2000, 2000, 10);
+             text2.position.set(-2000, 2000, 10);
              text2.rotateX(Math.PI);
              scene.add(text2);
              console.log(text2);
