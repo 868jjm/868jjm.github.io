@@ -83,9 +83,9 @@ let text1 = new THREE.Group();
         planeHeight = planeWidth / aspectRatio;
     }
 
+
     // now slap it on a plane 🛫
     text1 = new THREE.Mesh(
-        //new THREE.PlaneGeometry(1, 1, 1, 1),
         new THREE.PlaneGeometry(planeWidth,planeHeight, 1, 1),
         // new THREE.PlaneGeometry(text_size.x * 1.0, text_size.y * 1.0, 1, 1),
         new THREE.MeshBasicMaterial({
@@ -97,7 +97,7 @@ let text1 = new THREE.Group();
     text1.material.map.needsUpdate = true;
     // Example usage
     if (isMobile()) {
-        text1.position.set(0, 900, 1100);
+        text1.position.set(-1000/aspectRatio, 900, 1100);
     } else {
         text1.position.set(-1000, 900, 1100);
     }
@@ -146,6 +146,7 @@ let text2 = new THREE.Group();
     ctx.font = draw_font;
     ctx.fillText(text_string, 0, text_size.y - metrics.fontBoundingBoxDescent - padding);
 
+
     // Calculate aspect ratio
     const aspectRatio = text_size.x / text_size.y;
 
@@ -164,6 +165,7 @@ let text2 = new THREE.Group();
         planeHeight = planeWidth / aspectRatio;
     }
 
+
     // now slap it on a plane 🛫
     text2 = new THREE.Mesh(
 
@@ -178,7 +180,7 @@ let text2 = new THREE.Group();
     text2.material.map.needsUpdate = true;
     // Example usage
     if (isMobile()) {
-        text2.position.set(0, 2000, 10);
+        text2.position.set(-2000/aspectRatio, 2000, 10);
     } else {
         text2.position.set(-2000, 2000, 10);
     }
