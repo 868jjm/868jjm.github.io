@@ -43,7 +43,7 @@ h1 {
     color: #030303;
     z-index: 565656;
     bottom: 4em;
-    left: 50%;
+    left: 100%;
     position: fixed;
     top:35%;
     letter-spacing: 0.1em;
