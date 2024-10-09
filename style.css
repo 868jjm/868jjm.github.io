@@ -43,15 +43,14 @@ h1 {
     color: #030303;
     z-index: 565656;
     bottom: 4em;
-    left: 50%;
+    left: 60%; /* Shift it to the right */
     position: fixed;
-    top:35%;
+    top: 35%;
     letter-spacing: 0.1em;
-    z-index: 565656;
     display: inline-block;
-    width: 45%; 
+    width: 38.2%; /* Fibonacci smaller ratio */
     padding: 5%;
-  }
+}
 
 .loretta {
     font-family: "Andale Mono", "AndaleMono", Andale-Mono, AndaleMono, monospace;
