@@ -37,20 +37,22 @@ h1 {
     background-color: #030303;
     color: #fff;
   }
-.loretta2 {
+  .loretta2 {
     font-family: "Andale Mono", "AndaleMono", Andale-Mono, AndaleMono, monospace;
     font-size: 0.8em;
     color: #030303;
     z-index: 565656;
     bottom: 4em;
-    left: 60%; /* Shift it to the right */
+    left: 50%;
     position: fixed;
     top: 35%;
     letter-spacing: 0.1em;
     display: inline-block;
-    width: 38.2%; /* Fibonacci smaller ratio */
+    width: 27.5%; /* Updated width using Fibonacci ratio */
     padding: 5%;
+    transform: translateX(-50%); /* Center the element horizontally */
 }
+
 
 .loretta {
     font-family: "Andale Mono", "AndaleMono", Andale-Mono, AndaleMono, monospace;
