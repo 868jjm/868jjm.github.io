@@ -49,8 +49,7 @@ h1 {
     letter-spacing: 0.1em;
     display: inline-block;
     width: 27.5%; /* Updated width using Fibonacci ratio */
-    padding: 5%;
-    transform: translateX(-50%); /* Center the element horizontally */
+    padding: 5%;    
 }
 
 
