@@ -43,14 +43,14 @@ h1 {
     color: #030303;
     z-index: 565656;
     bottom: 4em;
-    right: 1%;
+    right: 0;	  
     position: fixed;
     top:35%;
     letter-spacing: 0.1em;
     z-index: 565656;
     display: inline-block;
     width: 38.46%; /* Updated width using Fibonacci ratio */
-    padding: 5%;
+    padding: 0%;
   }
 
 .loretta {
