@@ -57,10 +57,9 @@ let text1 = new THREE.Group();
         new THREE.Vector2(metrics.actualBoundingBoxRight + padding, metrics.fontBoundingBoxAscent + padding)
     ).getSize(text_size);
     // Multiply the existing values by the golden ratio
-    text_size.x *= goldenRatio;
-    text_size.y *= goldenRatio;
-    canvas.width = Math.ceil(text_size.x);
-    canvas.height = Math.ceil(text_size.y);
+
+    canvas.width = Math.ceil(text_size.x*goldenRatio);
+    canvas.height = Math.ceil(text_size.y*goldenRatio);
     // draw the texture on canvas
     ctx.fillStyle = '#000000';
     ctx.font = draw_font;
