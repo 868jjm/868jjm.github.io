@@ -56,8 +56,8 @@ let text1 = new THREE.Group();
         new THREE.Vector2(metrics.actualBoundingBoxLeft - padding, -metrics.fontBoundingBoxDescent - padding),
         new THREE.Vector2(metrics.actualBoundingBoxRight + padding, metrics.fontBoundingBoxAscent + padding)
     ).getSize(text_size);
-    canvas.width = Math.ceil(text_size.x*1.618);
-    canvas.height = Math.ceil(text_size.y*1.618);
+    canvas.width = Math.ceil(text_size.x);
+    canvas.height = Math.ceil(text_size.y);
     // draw the texture on canvas
     ctx.fillStyle = '#000000';
     ctx.font = draw_font;
