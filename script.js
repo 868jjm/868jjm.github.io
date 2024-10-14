@@ -3,7 +3,7 @@ function isMobile() {
 }
 
 var scene = new THREE.Scene();
-
+const goldenRatio = 1.618; // golden ratio scaling factor
 var camera = new THREE.PerspectiveCamera(25, window.innerWidth / window.innerHeight, 0.1, 12000)
 camera.position.z = 100;
 
@@ -56,6 +56,7 @@ let text1 = new THREE.Group();
         new THREE.Vector2(metrics.actualBoundingBoxLeft - padding, -metrics.fontBoundingBoxDescent - padding),
         new THREE.Vector2(metrics.actualBoundingBoxRight + padding, metrics.fontBoundingBoxAscent + padding)
     ).getSize(text_size);
+    text_size.multiplyScalar(scaleFactor);
     canvas.width = Math.ceil(text_size.x);
     canvas.height = Math.ceil(text_size.y);
     // draw the texture on canvas
