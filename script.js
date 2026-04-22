@@ -262,7 +262,7 @@ function loader(css, js) {
         if (now == total) {
             window.setTimeout(() => {
                 document.getElementById("loading").remove();
-            }, 4000);
+            }, 1500);
         }
     };
 
