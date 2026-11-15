@@ -87,6 +87,13 @@
 			<a class="i-link" data-href="https://www.linkedin.com/company/carbondotink">LINKEDIN</a>
 			
 		</center>
+		<footer>
+    		<p>&copy; <span id="year"></span> Carbondotink. All rights reserved.</p>
+		</footer>
+
+		<script>
+			document.getElementById("year").textContent = new Date().getFullYear();
+		</script>
 	</div>
 
 <script src="./script.js"></script>
@@ -100,12 +107,6 @@
     };
     </script>
 
-<footer>
-    <p>&copy; <span id="year"></span> Carbondotink. All rights reserved.</p>
-</footer>
 
-<script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 </body>
 </html>
