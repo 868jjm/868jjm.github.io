@@ -44,7 +44,7 @@ let text1 = new THREE.Group();
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
 
-    const text_string = 'It starts with you';
+    const text_string = 'It starts with us';
     const draw_font = 'bold 256px Helvetica';
     const padding = 16;
 
